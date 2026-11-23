@@ -10,6 +10,7 @@
       href="images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Bridge Collective</title>
   </head>
   <body>
@@ -19,11 +20,26 @@
         <span>Bridge Collective</span>
       </a>
 
-      <button class="menu-toggle" aria-label="Menu">
-        <img src="images/icon-menu.svg" alt="" />
+      <button
+        class="menu-toggle"
+        aria-label="Menu"
+        aria-expanded="false"
+        aria-controls="menu"
+      >
+        <img class="icon-open" src="images/icon-menu.svg" alt="" />
+        <img class="icon-close" src="images/icon-close.svg" alt="" />
       </button>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Work</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Annual Report</a></li>
+          <li><a href="#">Donate</a></li>
+        </ul>
+      </nav>
     </header>
-
+    <div class="menu-overlay"></div>
     <main class="hero">
       <div class="hero-text">
         <h1>A classroom for every child.</h1>
